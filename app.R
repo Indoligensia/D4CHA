@@ -1,3 +1,5 @@
+# https://indoligensia.shinyapps.io/ICLD/
+
 library(shiny) 
 library(shinydashboard) 
 
@@ -123,9 +125,9 @@ ui <- dashboardPage(
                 ),
                 
                 ## right
-                box(width = 9, title = "summary",
-                    tableOutput('dat_train_cont'))
-                
+                box(width = 9, title = "summary"#,
+                    #tableOutput('dat_train_cont')
+                    )
               )),
       tabItem(tabName = "preprocess", 
               h2("Data Preprocessing"),
